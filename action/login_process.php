@@ -10,7 +10,7 @@ $login = new Login();
 $auth = $login->authenticate($admin_user, $admin_pass);
 
 if ($auth) {
-    header("Location: ../manage_projects.php");
+    header("Location: ../dashboard.php");
 } else {
     header("Location: ../index.php?auth=false");
 }
